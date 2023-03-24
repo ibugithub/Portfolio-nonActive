@@ -31,7 +31,7 @@
 - [📝 License](#license)
 
 
-# 📖 Hello Microverse <a name="about-project"></a>
+# 📖Portfolio: setup and mobile first  <a name="about-project"></a>
 **Portfolio: setup and mobile first** is a Project in the first week of the program.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -51,12 +51,13 @@
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://google.com)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 To get a local copy up and running, follow these steps.
+`git clone https://github.com/ibugithub/Portfolio.git`
 
 ### Prerequisites
 In order to run this project you need:
@@ -75,6 +76,7 @@ Example commands:
 
 ### Install
 Install this project with:
+  `npm install `
  <p>No special installation needed</p>
 
 
@@ -106,7 +108,6 @@ You can deploy this project using:
 
 
 ## 🔭 Future Features <a name="future-features"></a>
-> Describe 1 - 3 features you will add to the project.
 - [ ] **[Responsive Home Page]**
 - [ ] **[Side bar]**
 
