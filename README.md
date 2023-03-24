@@ -46,7 +46,7 @@
 
 
 ### Key Features <a name="key-features"></a>
-- **will display Hello Microverse in a webpage**
+- **To Display my projects**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
