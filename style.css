@@ -14,6 +14,8 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #f7f7f9;
+  font-family: 'Poppins', sans-serif;
 }
 
 .appbar {
@@ -25,6 +27,7 @@ body {
   width: 375px;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 .logo {
@@ -56,11 +59,13 @@ body {
 .headline {
   background-image: url("images/header-shapes_mobile.png");
   width: 375px;
-  height: 587.15px;
-  top: 104px;
+  height: 610.15px;
   display: flex;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 90px;
+  background-color: white;
+  border-bottom-left-radius: 85px;
 }
 
 .title_container {
@@ -72,16 +77,18 @@ body {
   align-items: center;
   width: 375px;
   color: #172b4d;
-  margin-top: 50px;
+  margin-top: 66px;
 }
 
-.title {
+.headline > .title_container > .title {
   padding-right: 31px;
   padding-left: 25px;
 }
 
 .title > h1 {
   margin-bottom: 1px;
+  color: #172b4d;
+  font-size: 39px;
 }
 
 .description_container {
@@ -96,6 +103,8 @@ body {
 
 .description {
   padding-right: 34px;
+  color: #344563;
+  font-size: 16px;
 }
 
 .dialog_container {
@@ -139,4 +148,231 @@ body {
 
 .title h2 {
   margin-bottom: 1px;
+  font-size: 39px;
+  color: #172b4d;
+}
+
+.work_section {
+  width: 325px;
+  display: grid;
+  text-align: center;
+  padding: 25px;
+  gap: 88px;
+  margin-bottom: 90px;
+}
+
+.work1,
+.work2,
+.work3,
+.work4 {
+  border-radius: 16px;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 15px;
+}
+
+.lets_connect {
+  color: #7f8cff;
+  font-size: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.get_resume {
+  margin-bottom: 30px;
+}
+
+.work_title {
+  text-align: left;
+  font-size: 20px;
+}
+
+.work_title > h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-right: 21px;
+  line-height: 40px;
+  color: #172b4d;
+}
+
+.work_section ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5px;
+}
+
+.title_detail ul li a {
+  color: #778699;
+}
+
+.title_detail ul li:first-child a {
+  color: #2e4662;
+}
+
+.work_section ul li {
+  list-style: none;
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+.work_description {
+  text-align: left;
+  color: #344563;
+  padding-right: 39px;
+}
+
+.description_detail ul li {
+  font-size: 12px;
+  background-color: #eaebfe;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.see_project {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+
+.color396d {
+  color: #396df2;
+}
+
+.about_myself {
+  width: 375px;
+  padding-top: 75px;
+  padding-bottom: 114px;
+  background-color: white;
+  border-top-right-radius: 85px;
+}
+
+.about_myself_container {
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lsNone {
+  list-style: none;
+}
+
+.social_div2 {
+  padding-left: 1px;
+  display: flex;
+}
+
+.language_title {
+  display: flex;
+}
+
+.arrow {
+  margin-left: 134px;
+}
+
+.frameworks {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 310px;
+}
+
+.frameworks > .arrow {
+  margin-left: 130px;
+}
+
+.skills {
+  display: flex;
+  width: 310px;
+  padding-top: 12px;
+}
+
+.skills > .arrow {
+  margin-left: 200px;
+}
+
+.language_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 1px;
+}
+
+.about_myself .language_title .title,
+.about_myself .framework_container .title,
+.about_myself .skill_container .title {
+  font-size: 20px;
+}
+
+.language_title > .arrow > img {
+  padding-bottom: 4px;
+}
+
+.about_myself .language_list > li {
+  list-style: none;
+  padding: 8px 10px;
+  background-color: #f7f7f9;
+  padding-bottom: 1px;
+  width: 260px;
+  border-radius: 8px;
+}
+
+.separator {
+  margin-left: -20px;
+}
+
+.tdnone {
+  text-decoration: none;
+}
+
+.pd12 {
+  padding-left: 12px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.btn:enabled {
+  font-size: 19px;
+  text-align: start;
+  padding: 12px 12px;
+  border: 1px solid #6070ff;
+  width: 124px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  color: #396df2;
+  background: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #6070ff;
+}
+
+.btn:active {
+  color: white;
+  background-color: #0034cd;
+}
+
+.btn:disabled {
+  color: #5a6c83;
+  border: none;
+}
+
+.gmrbtn {
+  width: 161px !important;
+  margin-bottom: 0.1px !important;
+}
+
+.dflex {
+  display: flex;
+  justify-content: start;
+}
+
+.p13m15 {
+  padding-top: 13px;
+  margin-left: 15px;
+  color: #253858;
 }
