@@ -148,6 +148,8 @@ body {
 
 .title h2 {
   margin-bottom: 1px;
+  font-size: 39px;
+  color: #172b4d;
 }
 
 .work_section {
@@ -177,13 +179,7 @@ body {
 }
 
 .get_resume {
-  color: #396df2;
-  padding: 12px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  width: 132px;
-  font-size: 17px;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
 }
 
 .work_title {
@@ -191,11 +187,12 @@ body {
   font-size: 20px;
 }
 
-.work_title > h1 {
+.work_title > h2 {
   margin-top: 5px;
   margin-bottom: 5px;
   padding-right: 21px;
   line-height: 40px;
+  color: #172b4d;
 }
 
 .work_section ul {
@@ -232,13 +229,9 @@ body {
 }
 
 .see_project {
-  font-size: 19px;
-  text-align: start;
-  padding: 11px 11px;
-  border: 1px solid #6070ff;
-  width: 113px;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
 }
 
 .color396d {
@@ -305,10 +298,6 @@ body {
   padding: 1px;
 }
 
-.language {
-  padding-left: 12px;
-}
-
 .about_myself .language_title .title,
 .about_myself .framework_container .title,
 .about_myself .skill_container .title {
@@ -334,4 +323,56 @@ body {
 
 .tdnone {
   text-decoration: none;
+}
+
+.pd12 {
+  padding-left: 12px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.btn:enabled {
+  font-size: 19px;
+  text-align: start;
+  padding: 12px 12px;
+  border: 1px solid #6070ff;
+  width: 124px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  color: #396df2;
+  background: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #6070ff;
+}
+
+.btn:active {
+  color: white;
+  background-color: #0034cd;
+}
+
+.btn:disabled {
+  color: #5a6c83;
+  border: none;
+}
+
+.gmrbtn {
+  width: 161px !important;
+  margin-bottom: 0.1px !important;
+}
+
+.dflex {
+  display: flex;
+  justify-content: start;
+}
+
+.p13m15 {
+  padding-top: 13px;
+  margin-left: 15px;
+  color: #253858;
 }
