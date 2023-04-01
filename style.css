@@ -392,10 +392,12 @@ body {
   background-position-y: 22px;
   background-position-x: 148px;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact_title_description {
-  padding-top: 70px;
+  padding-top: 68px;
 }
 
 .contact_title {
@@ -456,7 +458,7 @@ textarea {
 }
 
 .contact_section form > ul {
-  padding: 30px 24px;
+  padding: 12px 24px;
   padding-bottom: 0.1px;
   margin-bottom: 0.1px;
 }
