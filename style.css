@@ -453,6 +453,10 @@ textarea {
   padding-left: 16px;
 }
 
+label {
+  color:#eaebfe
+}
+
 #height170 {
   height: 164px;
 }
