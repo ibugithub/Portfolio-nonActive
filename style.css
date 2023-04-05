@@ -388,7 +388,7 @@ body {
   background-image: url("images/contact_background.png");
   background-color: #6070ff;
   border-top-left-radius: 85px;
-  background-size: 60%;
+  background-size: 61% 791px;
   background-position-y: 22px;
   background-position-x: 148px;
   background-repeat: no-repeat;
@@ -462,9 +462,9 @@ label {
 }
 
 .contact_section form > ul {
-  padding: 12px 24px;
-  padding-bottom: 0.1px;
-  margin-bottom: 0.1px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 5px;
 }
 
 .widht136 {
