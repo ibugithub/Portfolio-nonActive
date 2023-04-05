@@ -418,21 +418,6 @@ body {
   margin-bottom: -5px;
 }
 
-/* textarea:invalid,
-input:invalid {
-  border: 1px solid red;
-}
-
-textarea:invalid:required,
-input:invalid:required {
-  background-image: linear-gradient(to right, pink, lightgreen);
-}
-
-textarea:valid,
-input:valid {
-  border: 1px solid green;
-} */
-
 .uline {
   padding: 10px 120px;
 }
@@ -451,6 +436,8 @@ textarea {
   margin-bottom: 17px;
   border: none;
   padding-left: 16px;
+  font-size: 17px;
+  color: #172b4d; 
 }
 
 label {
