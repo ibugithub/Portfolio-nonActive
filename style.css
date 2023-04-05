@@ -454,7 +454,7 @@ textarea {
 }
 
 label {
-  color:#eaebfe
+  color: #eaebfe;
 }
 
 #height170 {
@@ -462,9 +462,9 @@ label {
 }
 
 .contact_section form > ul {
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-bottom: 5px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 5px;
 }
 
 .widht136 {
