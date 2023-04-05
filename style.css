@@ -241,7 +241,7 @@ body {
 .about_myself {
   width: 375px;
   padding-top: 75px;
-  padding-bottom: 114px;
+  padding-bottom: 155px;
   background-color: white;
   border-top-right-radius: 85px;
 }
@@ -329,6 +329,10 @@ body {
   padding-left: 12px;
 }
 
+.pd10 {
+  padding-top: 10px;
+}
+
 .mt30 {
   margin-top: 30px;
 }
@@ -375,4 +379,92 @@ body {
   padding-top: 13px;
   margin-left: 15px;
   color: #253858;
+}
+
+/* it started form here */
+.contact_section {
+  background-color: white;
+  width: 375px;
+}
+
+.contact_container {
+  height: auto;
+  background-image: url("images/contact_background.png");
+  background-color: #6070ff;
+  border-top-left-radius: 85px;
+  background-size: 61% 718px;
+  background-position-y: 22px;
+  background-position-x: 148px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_title_description {
+  padding-top: 68px;
+}
+
+.contact_title {
+  font-size: 27px;
+  color: white;
+  text-align: center;
+}
+
+.contact_description {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.m-5 {
+  margin-bottom: -5px;
+}
+
+.uline {
+  padding: 10px 120px;
+}
+
+.uline > div {
+  height: 5px;
+  background: black;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  width: 311px;
+  height: 48px;
+  border-radius: 10px;
+  margin-bottom: 17px;
+  border: none;
+  padding-left: 16px;
+  font-size: 17px;
+  color: #172b4d;
+}
+
+label {
+  color: #eaebfe;
+}
+
+#height170 {
+  height: 164px;
+}
+
+.contact_section form > ul {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 5px;
+}
+
+.widht136 {
+  width: 143px !important;
+  padding: 14px 16px !important;
+}
+
+::placeholder {
+  color: #172b4d;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
 }
