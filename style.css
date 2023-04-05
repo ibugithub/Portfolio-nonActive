@@ -450,6 +450,8 @@ body {
   height: 5px;
   background: black;
   border-radius: 10px;
+  max-width: 170px;
+  margin: auto;
 }
 
 input,
@@ -462,6 +464,9 @@ textarea {
   width: 300px;
 }
 
+textarea {
+  padding-top: 20px;
+}
 .gintouch {
   text-align: left;
   width: 318px;
@@ -469,7 +474,7 @@ textarea {
 }
 
 #height170 {
-  height: 164px;
+  height: 148px;
 }
 
 .contact_section form>ul {
