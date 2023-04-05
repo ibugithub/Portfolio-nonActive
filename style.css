@@ -344,6 +344,10 @@ body {
   padding-left: 12px;
 }
 
+.pd10 {
+  padding-top: 10px;
+}
+
 .mt30 {
   margin-top: 30px;
 }
@@ -402,9 +406,9 @@ body {
   background-image: url("images/contact_background.png");
   background-color: #6070ff;
   border-top-left-radius: 85px;
-  background-size: 265px 724.17px;
-  background-position-y: 22%;
-  background-position-x: 97%;
+  background-size: 61% 718px;
+  background-position-y: 22px;
+  background-position-x: 148px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -449,21 +453,23 @@ textarea {
   border-radius: 10px;
   margin-bottom: 17px;
   border: none;
+  padding-left: 16px;
+  font-size: 17px;
+  color: #172b4d;
 }
 
 label {
-  color:#eaebfe
+  color: #eaebfe;
 }
 
 #height170 {
   height: 164px;
 }
 
-.contact_section form>ul {
-  padding: 12px 24px;
-  padding-bottom: 0.1px;
-  margin-bottom: 0.1px;
-  padding-right: 27px;
+.contact_section form > ul {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 5px;
 }
 
 .widht136 {
