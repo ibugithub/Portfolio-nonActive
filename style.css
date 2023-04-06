@@ -78,12 +78,12 @@ body {
   margin-top: 100px;
 }
 
-.headline .title_container>.title {
+.headline .title_container > .title {
   padding-right: 31px;
   padding-left: 25px;
 }
 
-.title>h1 {
+.title > h1 {
   margin-bottom: 1px;
   color: #172b4d;
   font-size: 39px;
@@ -115,7 +115,7 @@ body {
   font-size: 13px;
 }
 
-.dialog>h3 {
+.dialog > h3 {
   margin-bottom: 1px;
   font-weight: 500;
   margin-top: 10px;
@@ -130,7 +130,7 @@ body {
   justify-content: flex-start;
 }
 
-.social_container>ul>li {
+.social_container > ul > li {
   list-style: none;
 }
 
@@ -156,10 +156,11 @@ body {
   padding-right: 25px;
   gap: 88px;
   margin-bottom: 90px;
-  grid-template-areas: 'work1'
-  'work2'
-  'work3'
-  'work4';
+  grid-template-areas:
+    'work1'
+    'work2'
+    'work3'
+    'work4';
   justify-content: center;
 }
 
@@ -207,7 +208,7 @@ body {
   font-size: 20px;
 }
 
-.work_title>h2 {
+.work_title > h2 {
   margin-top: 5px;
   margin-bottom: 5px;
   padding-right: 21px;
@@ -292,7 +293,6 @@ body {
   justify-content: space-between;
   padding-top: 5px;
   padding-bottom: 5px;
-
 }
 
 .pdr25 {
@@ -319,11 +319,11 @@ body {
   font-size: 20px;
 }
 
-.language_title>.arrow>img {
+.language_title > .arrow > img {
   padding-bottom: 4px;
 }
 
-.about_myself .language_list>li {
+.about_myself .language_list > li {
   list-style: none;
   padding: 8px 10px;
   background-color: #f7f7f9;
@@ -431,7 +431,7 @@ body {
   padding-right: 7%;
 }
 
-.about_myself .language_framework { 
+.about_myself .language_framework {
   padding-left: unset;
   width: 100%;
   max-width: 400px;
@@ -446,7 +446,7 @@ body {
   padding-bottom: unset;
 }
 
-.uline>div {
+.uline > div {
   height: 5px;
   background: black;
   border-radius: 10px;
@@ -467,6 +467,7 @@ textarea {
 textarea {
   padding-top: 20px;
 }
+
 .gintouch {
   text-align: left;
   width: 318px;
@@ -477,7 +478,7 @@ textarea {
   height: 148px;
 }
 
-.contact_section form>ul {
+.contact_section form > ul {
   margin-bottom: 15px;
   text-align: center;
   padding-left: unset;
@@ -513,9 +514,7 @@ textarea {
   max-width: 400px;
 }
 
-
 /* desktop v1 started from here */
-
 @media screen and (min-width: 800px) {
   .headline {
     background-image: url('images/desktop_Header_background.png');
@@ -549,8 +548,7 @@ textarea {
   .work1,
   .work3 {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      'work_image work_content';
+    grid-template-areas: 'work_image work_content';
     padding: unset;
     max-width: unset;
   }
@@ -558,8 +556,7 @@ textarea {
   .work2,
   .work4 {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      'work_content work_image';
+    grid-template-areas: 'work_content work_image';
     padding: unset;
     max-width: unset;
   }
@@ -608,23 +605,23 @@ textarea {
   .pr0 {
     padding-right: unset;
   }
-  
-  .work_section>.work2 .work_content,
-  .work_section>.work4 .work_content {
+
+  .work_section > .work2 .work_content,
+  .work_section > .work4 .work_content {
     padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 10px;
   }
 
-  .work_section>.work1 .work_content,
-  .work_section>.work3 .work_content {
+  .work_section > .work1 .work_content,
+  .work_section > .work3 .work_content {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
   }
 
-  .work_section>.work1>.work_content>.work_title,
-  .work_section>.work3>.work_content>.work_title {
+  .work_section > .work1 > .work_content > .work_title,
+  .work_section > .work3 > .work_content > .work_title {
     padding-top: 8px;
   }
 
@@ -633,7 +630,7 @@ textarea {
     justify-content: space-between;
   }
 
-  header>nav {
+  header > nav {
     display: flex;
     padding-right: 105px;
   }
@@ -667,18 +664,12 @@ textarea {
     padding-right: unset;
   }
 
-  .about_myself .language_list>li {
+  .about_myself .language_list > li {
     flex-direction: column;
     width: 95px;
   }
 
-  .about_myself ul li:nth-child(1)>div>ul>li div {
-    margin-left: unset;
-    padding-top: 5px;
-    padding-bottom: 10px;
-  }
-
-  .contact_container>.contact_container_inner {
+  .contact_container > .contact_container_inner {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 35px;
@@ -693,12 +684,11 @@ textarea {
     margin: auto;
   }
 
-  
-.about_myself .language_framework {
-  padding-left: 40px;
-  width: 60%;
-  max-width: unset;
-}
+  .about_myself .language_framework {
+    padding-left: 40px;
+    width: 60%;
+    max-width: unset;
+  }
 
   input,
   textarea {
@@ -717,7 +707,7 @@ textarea {
     background-position-x: 56.34px;
     background-position-y: 75.09px;
     height: 846px;
-  } 
+  }
 
   .about_myself {
     padding-left: 3%;
@@ -726,7 +716,7 @@ textarea {
 
   @media screen and (min-width: 900px) {
     .work_section {
-      padding-left: 7%; 
+      padding-left: 7%;
       padding-right: 7%;
     }
 
@@ -738,7 +728,7 @@ textarea {
 
   @media screen and (min-width: 1000px) {
     .work_section {
-      padding-left: 10%; 
+      padding-left: 10%;
       padding-right: 10%;
     }
 
@@ -766,22 +756,4 @@ textarea {
       background-position-y: -8px;
     }
   }
-
 }
-
-/* @media screen and (min-width: 768px) and (max-width: 960px) {
-  .title_description_container {
-    padding-left: 115px;
-    padding-right: 30px;
-  }
-
-  .dialog_container {
-    padding-left: 115px;
-    padding-right: 30px;
-  }
-
-  .social_container {
-    padding-left: 115px;
-    padding-right: 30px;
-  }
-} */
