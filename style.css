@@ -714,9 +714,13 @@ textarea {
     padding-right: 3%;
   }
 
-  .img_transition:hover {
-    transform: translateY(0);
+
+  .img_transition{
+    transition: translateY(0);
     transition: transform 0.5s ease-in-out;
+  }
+
+  .img_transition:hover {
     transform: translateY(-5px);
   }
 
