@@ -78,12 +78,12 @@ body {
   margin-top: 100px;
 }
 
-.headline .title_container>.title {
+.headline .title_container > .title {
   padding-right: 31px;
   padding-left: 25px;
 }
 
-.title>h1 {
+.title > h1 {
   margin-bottom: 1px;
   color: #172b4d;
   font-size: 39px;
@@ -115,7 +115,7 @@ body {
   font-size: 13px;
 }
 
-.dialog>h3 {
+.dialog > h3 {
   margin-bottom: 1px;
   font-weight: 500;
   margin-top: 10px;
@@ -130,7 +130,7 @@ body {
   justify-content: flex-start;
 }
 
-.social_container>ul>li {
+.social_container > ul > li {
   list-style: none;
 }
 
@@ -208,7 +208,7 @@ body {
   font-size: 20px;
 }
 
-.work_title>h2 {
+.work_title > h2 {
   margin-top: 5px;
   margin-bottom: 5px;
   padding-right: 21px;
@@ -319,11 +319,11 @@ body {
   font-size: 20px;
 }
 
-.language_title>.arrow>img {
+.language_title > .arrow > img {
   padding-bottom: 4px;
 }
 
-.about_myself .language_list>li {
+.about_myself .language_list > li {
   list-style: none;
   padding: 8px 10px;
   background-color: #f7f7f9;
@@ -446,7 +446,7 @@ body {
   padding-bottom: unset;
 }
 
-.uline>div {
+.uline > div {
   height: 5px;
   background: black;
   border-radius: 10px;
@@ -478,7 +478,7 @@ textarea {
   height: 148px;
 }
 
-.contact_section form>ul {
+.contact_section form > ul {
   margin-bottom: 15px;
   text-align: center;
   padding-left: unset;
@@ -606,22 +606,22 @@ textarea {
     padding-right: unset;
   }
 
-  .work_section>.work2 .work_content,
-  .work_section>.work4 .work_content {
+  .work_section > .work2 .work_content,
+  .work_section > .work4 .work_content {
     padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 10px;
   }
 
-  .work_section>.work1 .work_content,
-  .work_section>.work3 .work_content {
+  .work_section > .work1 .work_content,
+  .work_section > .work3 .work_content {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
   }
 
-  .work_section>.work1>.work_content>.work_title,
-  .work_section>.work3>.work_content>.work_title {
+  .work_section > .work1 > .work_content > .work_title,
+  .work_section > .work3 > .work_content > .work_title {
     padding-top: 8px;
   }
 
@@ -630,7 +630,7 @@ textarea {
     justify-content: space-between;
   }
 
-  header>nav {
+  header > nav {
     display: flex;
     padding-right: 105px;
   }
@@ -664,12 +664,12 @@ textarea {
     padding-right: unset;
   }
 
-  .about_myself .language_list>li {
+  .about_myself .language_list > li {
     flex-direction: column;
     width: 95px;
   }
 
-  .contact_container>.contact_container_inner {
+  .contact_container > .contact_container_inner {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 35px;
@@ -714,13 +714,8 @@ textarea {
     padding-right: 3%;
   }
 
-
-  .img_transition{
-    transition: translateY(0);
-    transition: transform 0.5s ease-in-out;
-  }
-
   .img_transition:hover {
+    transition: transform 0.5s ease-in-out;
     transform: translateY(-5px);
   }
 
@@ -763,7 +758,6 @@ textarea {
       background-size: 94% 721.46px;
       height: 759px;
       background-position-x: 29px;
-
       background-position-y: -8px;
     }
   }
