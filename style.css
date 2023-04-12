@@ -223,7 +223,7 @@ body {
 }
 
 .title_detail ul li a {
-  color: #778699;
+  color: #4d596a;
 }
 
 .title_detail ul li:first-child a {
@@ -256,7 +256,7 @@ body {
 }
 
 .color396d {
-  color: #396df2;
+  color: #2648a0;
 }
 
 .about_myself {
@@ -512,6 +512,10 @@ textarea {
 
 .about_myself .myself_resume {
   max-width: 400px;
+}
+
+.dflx {
+  display: flex;
 }
 
 /* desktop v1 started from here */
