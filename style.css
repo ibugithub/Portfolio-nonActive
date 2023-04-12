@@ -108,7 +108,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 375px;
-  color: #768dfa;
+  color: #3550cf;
 }
 
 .dialog {
@@ -193,7 +193,7 @@ body {
 }
 
 .lets_connect {
-  color: #7f8cff;
+  color: #0034cd;
   font-size: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
