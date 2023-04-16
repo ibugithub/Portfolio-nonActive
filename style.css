@@ -519,7 +519,7 @@ textarea {
 }
 
 .hamburger_afterClick {
-  background: #6070F8;
+  background: #6070f8;
   height: 100vh;
   position: fixed;
   width: 100%;
@@ -550,16 +550,17 @@ textarea {
 }
 
 .menu_container {
-  width: 100vw; 
+  width: 100vw;
   display: flex;
   flex-direction: column;
   padding: unset;
-  font-size: 32px; 
+  font-size: 32px;
   color: white;
   line-height: 60px;
   padding-left: 30px;
   font-weight: 600;
 }
+
 /* desktop v1 started from here */
 @media screen and (min-width: 800px) {
   .headline {
