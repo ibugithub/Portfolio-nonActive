@@ -11,15 +11,35 @@
 
 <body>
 
-    <header class="nav mobile_show">
+    <header id="hamburger_afterClick" class="nav mobile_show">
         <div class="logo">
             <a href="/"><img src="images/Logo Placeholder.png" alt="This is logo"></a>
         </div>
         <nav class="navicon_container">
+
             <div class="navicon">
-                <div class="navimage">
-                    <img src="images/Union.png" alt="navigation menu">
+                <div id="mobile_hamburger_icon" class="navimage">
+                    <img src="images/Union.png" alt="navigation menu"> 
                 </div>
+
+                <div id="cancel_icon" class="navimage">
+                    <div class="cancel_icon_container">
+                        <img src="images/Enabled.png" alt="Cancel icon">
+                    </div>
+                    
+                    <ul class="menu_container">
+                        <li id="portfolio_menu" class="portfolio mr20 lsNone">
+                            Portfolio
+                        </li>
+                        <li id="about_menu" class="about mr20 lsNone">
+                            About
+                        </li>
+                        <li id="contact_menu" class="contact mr20 lsNone">
+                            Contact
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </nav>
     </header>
@@ -101,7 +121,7 @@
         </div>
     </section>
 
-    <section class="work_section">
+    <section id="portfolio_section" class="work_section">
 
         <div class="work1">
             <div class="work_image pr20">
@@ -406,7 +426,7 @@
 
     </section>
 
-    <section class="about_myself">
+    <section id="about_section" class="about_myself">
 
         <div class="about_myself_container">
 
@@ -533,7 +553,7 @@
 
     </section>
 
-    <section class="contact_section">
+    <section id="contact_section" class="contact_section">
         <div class="contact_container">
             <div class="contact_container_inner">
                 <div class="contact_title_description">
@@ -580,6 +600,7 @@
             </div>
         </div>
     </section>
+    <script src="index.js"></script>
 </body>
 
 </html>
