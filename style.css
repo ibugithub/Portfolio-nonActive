@@ -46,6 +46,7 @@ body {
 .navicon {
   padding-top: 18px;
   padding-right: 34px;
+  cursor: pointer;
 }
 
 .navimage image {
