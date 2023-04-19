@@ -55,44 +55,64 @@ contactMenu.addEventListener('click', () => {
 const projects = {
   project1: {
     id: 1,
-    title: 'Tonic',
-    description: '',
+    mobileTitle: 'Tonic',
+    desktopTitle: 'Tonic',
+    mobileProjectDescription: ['CANOPY', 'Back End Dev', '2015'],
+    desktopProjectDescription: ['CANOPY', 'Back End Dev', '2015'],
+    mobileProjectDetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    desktopProjectDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
     mobileImage: 'images/work_image1.png',
-    desktopImage: 'images/nature.png',
-    tech: ['HTML', 'CSS', 'Javascript', 'Ruby on rails'],
+    desktopImage: 'images/nature_popup.png',
+    mobileTech: ['HTML', 'CSS', 'Javascript'],
+    desktopTech: ['HTML', 'CSS', 'Javascript'],
     liveVersion: '#',
     source: '#',
   },
 
   project2: {
     id: 2,
-    title: 'Multi-Post Stories',
-    description: '. Illo error impedit odit blanditiis ducimus ipsum, tenetur repudiandae aperiam repellat. Vero deserunt porro necessitatibus dolor adipisci, suscipit quo laborum beatae quam.',
+    mobileTitle: 'Tonic',
+    desktopTitle: 'Multi-Post Stories',
+    mobileProjectDescription: ['CANOPY', 'Back End Dev', '2015'],
+    desktopProjectDescription: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    mobileProjectDetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    desktopProjectDetail: "Experimental content creation feature that allows users to add to an existing story over thecourse of a day without spamming their friends. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.",
     mobileImage: 'images/work_image2.png',
     desktopImage: 'images/professional_art.png',
-    tech: ['HTML', 'CSS', 'Javascript', 'Ruby on rails'],
+    mobileTech: ['HTML', 'CSS', 'Javascript'],
+    desktopTech: ['HTML', 'CSS', 'Javascript', 'Ruby on rails'],
     liveVersion: '#',
     source: '#',
   },
 
   project3: {
     id: 3,
-    title: 'Tonic',
-    description: 'This is project 3',
+    mobileTitle: 'Tonic',
+    desktopTitle: 'Facebook 360',
+    mobileProjectDescription: ['CANOPY', 'Back End Dev', '2015'],
+    desktopProjectDescription: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    mobileProjectDetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    desktopProjectDetail: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.",
     mobileImage: 'images/work_image3.png',
     desktopImage: 'images/avocode.png',
-    tech: ['HTML', 'CSS', 'Javascript', 'Ruby on rails'],
+    mobileTech: ['HTML', 'CSS', 'Javascript'],
+    desktopTech: ['HTML', 'CSS', 'Javascript', 'Ruby on rails'],
     liveVersion: '#',
     source: '#',
   },
 
   project4: {
     id: 4,
-    title: 'Multi-Post Stories',
-    description: 'This is project 4',
+    mobileTitle: 'Multi-Post Stories',
+    desktopTitle: 'Uber Navigation',
+    mobileProjectDescription: ['CANOPY', 'Back End Dev', '2015'],
+    desktopProjectDescription: ['Uber', 'Lead Developer', '2018'],
+    mobileProjectDetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    desktopProjectDetail: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.",
     mobileImage: 'images/work_image4.png',
     desktopImage: 'images/availability.png',
-    tech: ['HTML', 'CSS', 'Javascript', 'Ruby on rails'],
+    mobileTech: ['HTML', 'CSS', 'Javascript'],
+    desktopTech: ['HTML', 'CSS', 'Javascript', 'Ruby on rails'],
     liveVersion: '#',
     source: '#',
   },
@@ -116,9 +136,11 @@ const removingDetailPopup = () => {
   document.body.removeChild(detailPopupWindow);
 };
 
-const addingDetailPopup = () => {
-  // work1Section.classList.toggle('detail_popup_container');
+const addingDetailPopup = (id) => {
   document.body.appendChild(detailPopupWindow);
+  if (id === 'project1') {
+    document.querySelector('.tech_hide').classList.add('dnone');
+  }
   const cancelPopup = document.querySelector('#popup_cancel');
   cancelPopup.addEventListener('click', removingDetailPopup);
   cancelPopup.addEventListener('click', detailPopupBlur);
@@ -127,53 +149,69 @@ const addingDetailPopup = () => {
 const poupConstructor = (project) => {
   detailPopupWindow.innerHTML = `<div class="popup_container">
   <div class="heading">
-      <div class="title">
-          ${projects[project].title}
-      </div>
-  
+      <div class="title mobilePopup_show"> ${projects[project].mobileTitle} </div>
+      <div class="title desktopPopup_show"> ${projects[project].desktopTitle} </div>
       <div id="popup_cancel">
       <img src="images/EnabledGray.png" alt="Cancel icon">
       </div>
   </div>
   
   <div class="description">
-      <ul>
-          <li class="lsNone"><a class="tdnone" href="">CANOPY</a></li>
+      <ul class="mobilePopup_show" >
+          <li class="lsNone"><a class="tdnone" href="">${projects[project].mobileProjectDescription[0]}</a></li>
           <li class="lsNone"><img src="images/Circle.png" alt=""></li>
-          <li class="lsNone"><a class="tdnone" href="">Back End Dev</a></li>
+          <li class="lsNone"><a class="tdnone" href="">${projects[project].mobileProjectDescription[1]}</a></li>
           <li class="lsNone"><img src="images/Circle.png" alt=""></li>
-          <li class="lsNone"><a class="tdnone" href="">2015</a></li>
+          <li class="lsNone"><a class="tdnone" href="">${projects[project].mobileProjectDescription[2]}</a></li>
       </ul>
+      <ul class="desktopPopup_show" >
+          <li class="lsNone"><a class="tdnone" href="">${projects[project].desktopProjectDescription[0]}</a></li>
+          <li class="lsNone"><img src="images/Circle.png" alt=""></li>
+          <li class="lsNone"><a class="tdnone" href="">${projects[project].desktopProjectDescription[1]}</a></li>
+          <li class="lsNone"><img src="images/Circle.png" alt=""></li>
+          <li class="lsNone"><a class="tdnone" href="">${projects[project].desktopProjectDescription[2]}</a></li>
+  </ul>
   </div>
   <div class="project_image">
-      <img class="img_transition mobile_show wd100" src="${projects[project].mobileImage}" alt="My Project 1">
-      <img class="img_transition desktop_show width100 height100 pr20" src="${projects[project].desktopImage}"
+      <img class="img_transition mobilePopup_show wd100" src="${projects[project].mobileImage}" alt="My Project 1">
+      <img class="img_transition desktopPopup_show width100 height100 pr20" src="${projects[project].desktopImage}"
           alt="My Project Nature">
   </div>
-  <div class="project_detail_container">
-      <div class="project_detail"> ${projects[project].description}</div>
+  <div class="project_detail_container pdt-50">
+      <div class="project_detail mobilePopup_show"> ${projects[project].mobileProjectDetail}</div>
+      <div class="project_detail desktopPopup_show"> ${projects[project].desktopProjectDetail}</div>
 
       <div class="project_tech_container">
           <div class="project_tech">
-              <ul>
-                  <li class="lsNone"><a class="tdnone color396d" href="">${projects[project].tech[0]}</a></li>
-                  <li class="lsNone"><a class="tdnone color396d" href="">${projects[project].tech[1]}</a></li>
-                  <li class="lsNone"><a class="tdnone color396d" href="">${projects[project].tech[2]}</a></li>
+              <ul class="mobilePopup_show">
+                  <li class="lsNone"><a class="tdnone color396d" href="">${projects[project].mobileTech[0]}</a></li>
+                  <li class="lsNone"><a class="tdnone color396d" href="">${projects[project].mobileTech[1]}</a></li>
+                  <li class="lsNone"><a class="tdnone color396d" href="">${projects[project].mobileTech[2]}</a></li>
               </ul>
+              <ul class="desktopPopup_show flxwrp">
+                  <li class="lsNone"><a class="tdnone color396d" href="">${projects[project].desktopTech[0]}</a></li>
+                  <li class="lsNone"><a class="tdnone color396d" href="">${projects[project].desktopTech[1]}</a></li>
+                  <li class="lsNone"><a class="tdnone color396d" href="">${projects[project].desktopTech[2]}</a></li>
+                  <li class="tech_hide lsNone"><a class="tdnone color396d" href="">${projects[project].desktopTech[3]}</a></li>
+          </ul>
           </div>
           <div class="see_live_source_btn">
+          <a class="tdnone color396d" href="">
               <button class="see_live dflx detail_popup_btn">
                   see live
                   <div class="live_icon">
                       <img src="images/IconGoLive.svg" alt="go live ">
                   </div>
               </button>
+            </a>
+            <a class="tdnone color396d" href="">
               <button class="see_source dflx detail_popup_btn">
                   see source
                   <div class="source_icon">
                       <img src="images/IconGitHub.png" alt="Go github for source">
                   </div>
               </button>
+              </a>
           </div>
       </div>
   </div>
@@ -184,7 +222,7 @@ const projectSection = document.querySelectorAll('.work');
 projectSection.forEach((element) => {
   element.addEventListener('click', () => {
     poupConstructor(element.id);
-    addingDetailPopup();
+    addingDetailPopup(element.id);
     detailPopupBlur();
   });
 });
