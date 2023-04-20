@@ -238,6 +238,21 @@ window.addEventListener('load', () => {
   email.className = isValid ? 'lvalid' : 'invalid';
 });
 
+email.addEventListener('input', () => {
+  if (email.value.length === 0) {
+    email.className = 'invalid';
+    error.textContent = 'Email field can not be blank';
+    error.className = 'error active';
+  } else if (!emailRegExp.test(email.value)) {
+    email.className = 'invalid';
+    error.textContent = 'Invalid email (email must be in lower case)';
+    error.className = 'error active';
+  } else {
+    email.className = 'valid';
+    error.textContent = '';
+    error.className = 'error dnonenim';
+  }
+});
 
 form.addEventListener('submit', (event) => {
   if (email.value.length === 0) {
