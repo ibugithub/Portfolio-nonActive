@@ -258,5 +258,9 @@ form.addEventListener('submit', (event) => {
 
 // This section is for preserving data in the web browser...
 window.addEventListener('load', () => {
-  console.log('window loded');
+  const name = localStorage.getItem('name');
+  const email = localStorage.getItem('email');
+  const msg = localStorage.getItem('msg');
+  
+
 });
