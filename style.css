@@ -645,6 +645,15 @@ textarea {
   height: 24px;
 }
 
+.detail_popup_btn {
+  background: white;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  gap: 10px;
+  align-items: center;
+  padding: 6px 20px 6px 20px;
+}
+
 .detail_popup_btn:enabled {
   color: #396df2;
   background: white;
