@@ -657,26 +657,27 @@ textarea {
   padding: 6px 20px 6px 20px;
 }
 
-.btn:enabled {
+.detail_popup_btn:enabled {
   color: #396df2;
   background: white;
   cursor: pointer;
 }
 
-.btn:hover {
+.detail_popup_btn:hover {
   color: white;
   background-color: #6070ff;
 }
 
-.btn:active {
+.detail_popup_btn:active {
   color: white;
   background-color: #0034cd;
 }
 
-.btn:disabled {
+.detail_popup_btn:disabled {
   color: #5a6c83;
   border: none;
 }
+
 .mobilePopup_show {
   display: flex !important;
 }

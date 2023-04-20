@@ -238,6 +238,22 @@ window.addEventListener('load', () => {
   email.className = isValid ? 'lvalid' : 'invalid';
 });
 
+email.addEventListener('input', () => {
+  if (email.value.length === 0) {
+    email.className = 'invalid';
+    error.textContent = 'Email field can not be blank';
+    error.className = 'error active';
+  } else if (!emailRegExp.test(email.value)) {
+    email.className = 'invalid';
+    error.textContent = 'Invalid email (email must be in lower case)';
+    error.className = 'error active';
+  } else {
+    email.className = 'valid';
+    error.textContent = '';
+    error.className = 'error dnonenim';
+  }
+});
+
 form.addEventListener('submit', (event) => {
   if (email.value.length === 0) {
     event.preventDefault();
@@ -253,6 +269,9 @@ form.addEventListener('submit', (event) => {
     email.className = 'valid';
     error.textContent = '';
     error.className = 'error dnonenim';
+    localStorage.setItem('name', document.getElementById('name').value);
+    localStorage.setItem('email', document.getElementById('email').value);
+    localStorage.setItem('msg', document.getElementById('msg').value);
   }
 });
 
@@ -261,6 +280,7 @@ window.addEventListener('load', () => {
   const name = localStorage.getItem('name');
   const email = localStorage.getItem('email');
   const msg = localStorage.getItem('msg');
-  
-
+  document.getElementById('name').value = name;
+  document.getElementById('email').value = email;
+  document.getElementById('msg').value = msg;
 });
