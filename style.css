@@ -484,6 +484,9 @@ textarea {
   text-align: center;
   padding-left: unset;
   margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pdl27 {
@@ -668,6 +671,44 @@ textarea {
 
 .flxwrp {
   flex-wrap: wrap;
+}
+
+input.invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+
+input:focus.invalid {
+  outline: none;
+}
+
+input.valid {
+  border: 1px solid green;
+  background: lightblue;
+}
+
+input:focus.valid {
+  outline: none;
+}
+
+.error {
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 300px;
+}
+
+.flxclm {
+  display: flex;
+  flex-direction: column;
+}
+
+.dnonenim {
+  display: none;
 }
 
 /* desktop v1 started from here */
