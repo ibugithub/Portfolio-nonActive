@@ -238,7 +238,6 @@ window.addEventListener('load', () => {
   email.className = isValid ? 'lvalid' : 'invalid';
 });
 
-
 form.addEventListener('submit', (event) => {
   if (email.value.length === 0) {
     event.preventDefault();
@@ -255,4 +254,9 @@ form.addEventListener('submit', (event) => {
     error.textContent = '';
     error.className = 'error dnonenim';
   }
+});
+
+// This section is for preserving data in the web browser...
+window.addEventListener('load', () => {
+  console.log('window loded');
 });
