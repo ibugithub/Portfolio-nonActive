@@ -151,7 +151,7 @@ const ProjectContainer = document.querySelector('.Projects');
 const portfolioSection = document.createElement('div');
 portfolioSection.id = 'portfolio_section';
 portfolioSection.classList.add('work_section');
-// ProjectContainer.appendChild(portfolioSection);
+ProjectContainer.appendChild(portfolioSection);
 let i = 1;
 Object.values(projects).forEach((values) => {
   const project = document.createElement('div');
@@ -169,6 +169,10 @@ Object.values(projects).forEach((values) => {
   const desktopImage = document.createElement('img');
   desktopImage.classList.add('img_transition', 'desktop_show', 'wd100', 'height100', 'pr20');
   desktopImage.src = values.desktopImage;
+
+  if (project.className === 'work1') {
+    desktopImage.src = 'images/nature.png';
+  }
 
   imageSection.appendChild(mobileImage);
   imageSection.appendChild(desktopImage);
@@ -218,12 +222,12 @@ Object.values(projects).forEach((values) => {
   const mobileProjectDetail = document.createElement('div');
   mobileProjectDetail.classList.add('work_description', 'mobile_show');
   workContent.appendChild(mobileProjectDetail);
-  mobileProjectDetail.innerHTML = `<p> ${values.mobileProjectDetail} </p>`;
+  mobileProjectDetail.innerHTML = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
 
   const desktopProjectDetail = document.createElement('div');
   desktopProjectDetail.classList.add('work_description', 'desktop_show');
   workContent.appendChild(desktopProjectDetail);
-  desktopProjectDetail.innerHTML = `<p>${values.desktopProjectDetail}</p> `;
+  desktopProjectDetail.innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s";
 
   const techDetail = document.createElement('div');
   techDetail.classList.add('description_detail');
@@ -253,7 +257,7 @@ Object.values(projects).forEach((values) => {
   seeProject.classList.add('see_project');
   workContent.appendChild(seeProject);
   const button = document.createElement('button');
-  button.classList.add('btn,work');
+  button.classList.add('btn', 'work');
   button.id = 'project1';
   button.textContent = 'See project';
   seeProject.appendChild(button);
