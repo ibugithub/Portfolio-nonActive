@@ -77,6 +77,7 @@ const projects = {
     desktopProjectDescription: ['FACEBOOK', '<img src="images/Circle.png" alt=""></img>', 'Full Stack Dev', '<img src="images/Circle.png" alt=""></img>', '2015'],
     mobileProjectDetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopProjectDetail: "<p class='margin_unset'>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p> <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>",
+    mobileImage: 'images/availability.png',
     desktopImage: 'images/professional_art.png',
     mobileTech: ['HTML', 'CSS', 'Javascript'],
     desktopTech: ['HTML', 'CSS', 'Javascript', 'Ruby on rails'],
