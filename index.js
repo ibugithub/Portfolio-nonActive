@@ -269,7 +269,11 @@ form.addEventListener('submit', (event) => {
     email.className = 'valid';
     error.textContent = '';
     error.className = 'error dnonenim';
+  }
+});
 
+document.querySelectorAll('.formli').forEach((value) => {
+  value.addEventListener('input', () => {
     let user = {
       name: document.getElementById('name').value,
       email: document.getElementById('email').value,
@@ -277,7 +281,7 @@ form.addEventListener('submit', (event) => {
     };
     user = JSON.stringify(user);
     localStorage.setItem('user', user);
-  }
+  });
 });
 
 // This section is for preserving data in the web browser...
