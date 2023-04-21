@@ -508,7 +508,7 @@ textarea {
 }
 
 .desktop_show {
-  display: none;
+  display: none !important;
 }
 
 .about_myself .myself_resume {
@@ -747,7 +747,7 @@ textarea {
   }
 
   .desktop_show {
-    display: block;
+    display: flex !important;
   }
 
   .mobile_show {

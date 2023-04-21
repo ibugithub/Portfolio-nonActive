@@ -146,6 +146,120 @@ const addingDetailPopup = (id) => {
   cancelPopup.addEventListener('click', detailPopupBlur);
 };
 
+// Constructing the project Selection.
+const ProjectContainer = document.querySelector('.Projects');
+const portfolioSection = document.createElement('div');
+portfolioSection.id = 'portfolio_section';
+portfolioSection.classList.add('work_section');
+// ProjectContainer.appendChild(portfolioSection);
+let i = 1;
+Object.values(projects).forEach((values) => {
+  const project = document.createElement('div');
+  project.classList.add(`work${i}`);
+  portfolioSection.appendChild(project);
+
+  const imageSection = document.createElement('div');
+  imageSection.classList.add('work_image', 'pr20');
+  project.appendChild(imageSection);
+
+  const mobileImage = document.createElement('img');
+  mobileImage.classList.add('img_transition', 'mobile_show', 'wd100');
+  mobileImage.src = values.mobileImage;
+
+  const desktopImage = document.createElement('img');
+  desktopImage.classList.add('img_transition', 'desktop_show', 'wd100', 'height100', 'pr20');
+  desktopImage.src = values.desktopImage;
+
+  imageSection.appendChild(mobileImage);
+  imageSection.appendChild(desktopImage);
+
+  const workContent = document.createElement('div');
+  workContent.classList.add('work_content');
+  project.appendChild(workContent);
+
+  const ProjTitle = document.createElement('div');
+  ProjTitle.classList.add('work_title');
+  workContent.appendChild(ProjTitle);
+
+  const mobileTitle = document.createElement('h2');
+  mobileTitle.classList.add('mobile_show');
+  mobileTitle.textContent = values.mobileTitle;
+  const desktopTitle = document.createElement('h2');
+  desktopTitle.classList.add('desktop_show');
+  desktopTitle.textContent = values.desktopTitle;
+  ProjTitle.appendChild(mobileTitle);
+  ProjTitle.appendChild(desktopTitle);
+
+  const projDetail = document.createElement('div');
+  projDetail.classList.add('title_detail');
+  workContent.appendChild(projDetail);
+  const mobileprojDetailUl = document.createElement('ul');
+  mobileprojDetailUl.classList.add('mobile_show');
+  projDetail.appendChild(mobileprojDetailUl);
+
+  values.mobileProjectDescription.forEach((values) => {
+    const descriptionLi = document.createElement('li');
+    descriptionLi.classList.add('tdnone');
+    mobileprojDetailUl.appendChild(descriptionLi);
+    descriptionLi.innerHTML = values;
+  });
+
+  const desktopProjDetailUl = document.createElement('ul');
+  desktopProjDetailUl.classList.add('desktop_show');
+  projDetail.appendChild(desktopProjDetailUl);
+
+  values.desktopProjectDescription.forEach((values) => {
+    const descriptionLi = document.createElement('li');
+    descriptionLi.classList.add('tdnone');
+    desktopProjDetailUl.appendChild(descriptionLi);
+    descriptionLi.innerHTML = values;
+  });
+
+  const mobileProjectDetail = document.createElement('div');
+  mobileProjectDetail.classList.add('work_description', 'mobile_show');
+  workContent.appendChild(mobileProjectDetail);
+  mobileProjectDetail.innerHTML = `<p> ${values.mobileProjectDetail} </p>`;
+
+  const desktopProjectDetail = document.createElement('div');
+  desktopProjectDetail.classList.add('work_description', 'desktop_show');
+  workContent.appendChild(desktopProjectDetail);
+  desktopProjectDetail.innerHTML = `<p>${values.desktopProjectDetail}</p> `;
+
+  const techDetail = document.createElement('div');
+  techDetail.classList.add('description_detail');
+  workContent.appendChild(techDetail);
+  const mobiletechDetailUl = document.createElement('ul');
+  mobiletechDetailUl.classList.add('mobile_show');
+  techDetail.appendChild(mobiletechDetailUl);
+
+  values.mobileTech.forEach((values) => {
+    const descriptionLi = document.createElement('li');
+    descriptionLi.classList.add('tdnone', 'color396d');
+    mobiletechDetailUl.appendChild(descriptionLi);
+    descriptionLi.innerHTML = values;
+  });
+
+  const desktoptechDetailUl = document.createElement('ul');
+  mobiletechDetailUl.classList.add('desktop_show');
+  techDetail.appendChild(desktoptechDetailUl);
+  values.desktopTech.forEach((values) => {
+    const descriptionLi = document.createElement('li');
+    descriptionLi.classList.add('tdnone', 'color396d');
+    desktoptechDetailUl.appendChild(descriptionLi);
+    descriptionLi.innerHTML = values;
+  });
+
+  const seeProject = document.createElement('div');
+  seeProject.classList.add('see_project');
+  workContent.appendChild(seeProject);
+  const button = document.createElement('button');
+  button.classList.add('btn,work');
+  button.id = 'project1';
+  button.textContent = 'See project';
+  seeProject.appendChild(button);
+  i += 1;
+});
+
 const poupConstructor = (project) => {
   detailPopupWindow.innerHTML = `<div class="popup_container">
   <div class="heading">
