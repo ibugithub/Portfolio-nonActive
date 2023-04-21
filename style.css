@@ -156,13 +156,14 @@ body {
   padding-left: 25px;
   padding-right: 25px;
   gap: 88px;
-  margin-bottom: 90px;
   grid-template-areas:
     'work1'
     'work2'
     'work3'
     'work4';
   justify-content: center;
+  margin-bottom: unset;
+  padding-bottom: 114px;
 }
 
 .work1 {
@@ -624,6 +625,7 @@ textarea {
   justify-content: flex-start;
   padding-left: unset;
   gap: 10px;
+  padding-right: 25px;
   margin-top: 10px;
 }
 
@@ -689,6 +691,35 @@ textarea {
 
 .flxwrp {
   flex-wrap: wrap;
+}
+
+.popup_seperator {
+  height: 1px;
+  width: 100%;
+  background: #e0e1e6;
+}
+
+.project_tech_container {
+  display: flex;
+  flex-direction: column;
+  width: 26%;
+  min-width: 290px;
+}
+
+.project_tech {
+  padding-bottom: 5px;
+}
+
+.tech_hide {
+  display: none;
+}
+
+.flex_column {
+  flex-direction: column;
+}
+
+.margin_unset {
+  margin: unset;
 }
 
 /* desktop v1 started from here */

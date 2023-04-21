@@ -5,7 +5,7 @@ const cancelIconContainer = document.querySelector('.cancel_icon_container');
 const header = document.querySelector('#hamburger_afterClick');
 const headline = document.querySelector('.headline');
 const logo = document.querySelector('.logo');
-const workSection = document.querySelector('.work_section');
+const workSection = document.querySelector('.Projects');
 const aboutMyself = document.querySelector('.about_myself');
 const contactSection = document.querySelector('.contact_section');
 const portfolioMenu = document.querySelector('#portfolio_menu');
@@ -57,14 +57,14 @@ const projects = {
     id: 1,
     mobileTitle: 'Tonic',
     desktopTitle: 'Tonic',
-    mobileProjectDescription: ['CANOPY', 'Back End Dev', '2015'],
-    desktopProjectDescription: ['CANOPY', 'Back End Dev', '2015'],
+    mobileProjectDescription: ['CANOPY', '<img src="images/Circle.png" alt=""></img>', 'Back End Dev', '<img src="images/Circle.png" alt=""></img>', '2015'],
+    desktopProjectDescription: ['CANOPY', '<img src="images/Circle.png" alt=""></img>', 'Back End Dev', '<img src="images/Circle.png" alt=""></img>', '2015'],
     mobileProjectDetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    desktopProjectDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
+    desktopProjectDetail: "<p class='margin_unset'>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p> <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>",
     mobileImage: 'images/work_image1.png',
     desktopImage: 'images/nature_popup.png',
     mobileTech: ['HTML', 'CSS', 'Javascript'],
-    desktopTech: ['HTML', 'CSS', 'Javascript'],
+    desktopTech: ['HTML', 'CSS', 'Javascript', 'Ruby', 'Bootstrap'],
     liveVersion: '#',
     source: '#',
   },
@@ -73,11 +73,10 @@ const projects = {
     id: 2,
     mobileTitle: 'Tonic',
     desktopTitle: 'Multi-Post Stories',
-    mobileProjectDescription: ['CANOPY', 'Back End Dev', '2015'],
-    desktopProjectDescription: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    mobileProjectDescription: ['CANOPY', '<img src="images/Circle.png" alt=""></img>', 'Back End Dev', '<img src="images/Circle.png" alt=""></img>', '2015'],
+    desktopProjectDescription: ['FACEBOOK', '<img src="images/Circle.png" alt=""></img>', 'Full Stack Dev', '<img src="images/Circle.png" alt=""></img>', '2015'],
     mobileProjectDetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    desktopProjectDetail: "Experimental content creation feature that allows users to add to an existing story over thecourse of a day without spamming their friends. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    mobileImage: 'images/work_image2.png',
+    desktopProjectDetail: "<p class='margin_unset'>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p> <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>",
     desktopImage: 'images/professional_art.png',
     mobileTech: ['HTML', 'CSS', 'Javascript'],
     desktopTech: ['HTML', 'CSS', 'Javascript', 'Ruby on rails'],
@@ -89,10 +88,10 @@ const projects = {
     id: 3,
     mobileTitle: 'Tonic',
     desktopTitle: 'Facebook 360',
-    mobileProjectDescription: ['CANOPY', 'Back End Dev', '2015'],
-    desktopProjectDescription: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    mobileProjectDescription: ['CANOPY', '<img src="images/Circle.png" alt=""></img>', 'Back End Dev', '<img src="images/Circle.png" alt=""></img>', '2015'],
+    desktopProjectDescription: ['FACEBOOK', '<img src="images/Circle.png" alt=""></img>', 'Full Stack Dev', '<img src="images/Circle.png" alt=""></img>', '2015'],
     mobileProjectDetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    desktopProjectDetail: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desktopProjectDetail: "<p class='margin_unset'>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p> <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>",
     mobileImage: 'images/work_image3.png',
     desktopImage: 'images/avocode.png',
     mobileTech: ['HTML', 'CSS', 'Javascript'],
@@ -105,10 +104,10 @@ const projects = {
     id: 4,
     mobileTitle: 'Multi-Post Stories',
     desktopTitle: 'Uber Navigation',
-    mobileProjectDescription: ['CANOPY', 'Back End Dev', '2015'],
-    desktopProjectDescription: ['Uber', 'Lead Developer', '2018'],
+    mobileProjectDescription: ['CANOPY', '<img src="images/Circle.png" alt=""></img>', 'Back End Dev', '<img src="images/Circle.png" alt=""></img>', '2015'],
+    desktopProjectDescription: ['Uber', '<img src="images/Circle.png" alt=""></img>', 'Lead Developer', '<img src="images/Circle.png" alt=""></img>', '2018'],
     mobileProjectDetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    desktopProjectDetail: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desktopProjectDetail: "<p class='margin_unset'>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p> <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>",
     mobileImage: 'images/work_image4.png',
     desktopImage: 'images/availability.png',
     mobileTech: ['HTML', 'CSS', 'Javascript'],
@@ -136,10 +135,10 @@ const removingDetailPopup = () => {
   document.body.removeChild(detailPopupWindow);
 };
 
-const addingDetailPopup = (id) => {
+const addingDetailPopup = (project) => {
   document.body.appendChild(detailPopupWindow);
-  if (id === 'project1') {
-    document.querySelector('.tech_hide').classList.add('dnone');
+  if (project === 'project1') {
+    document.querySelector('.tech_hide').style.display = 'block';
   }
   const cancelPopup = document.querySelector('#popup_cancel');
   cancelPopup.addEventListener('click', removingDetailPopup);
@@ -244,7 +243,7 @@ Object.values(projects).forEach((values) => {
   });
 
   const desktoptechDetailUl = document.createElement('ul');
-  mobiletechDetailUl.classList.add('desktop_show');
+  desktoptechDetailUl.classList.add('desktop_show');
   techDetail.appendChild(desktoptechDetailUl);
   values.desktopTech.forEach((values) => {
     const descriptionLi = document.createElement('li');
@@ -258,7 +257,7 @@ Object.values(projects).forEach((values) => {
   workContent.appendChild(seeProject);
   const button = document.createElement('button');
   button.classList.add('btn', 'work');
-  button.id = 'project1';
+  button.id = `project${i}`;
   button.textContent = 'See project';
   seeProject.appendChild(button);
   i += 1;
@@ -277,17 +276,18 @@ const poupConstructor = (project) => {
   <div class="description">
       <ul class="mobilePopup_show" >
           <li class="lsNone"><a class="tdnone" href="">${projects[project].mobileProjectDescription[0]}</a></li>
-          <li class="lsNone"><img src="images/Circle.png" alt=""></li>
           <li class="lsNone"><a class="tdnone" href="">${projects[project].mobileProjectDescription[1]}</a></li>
-          <li class="lsNone"><img src="images/Circle.png" alt=""></li>
           <li class="lsNone"><a class="tdnone" href="">${projects[project].mobileProjectDescription[2]}</a></li>
+          <li class="lsNone"><a class="tdnone" href="">${projects[project].mobileProjectDescription[3]}</a></li>
+          <li class="lsNone"><a class="tdnone" href="">${projects[project].mobileProjectDescription[4]}</a></li>
+
       </ul>
       <ul class="desktopPopup_show" >
           <li class="lsNone"><a class="tdnone" href="">${projects[project].desktopProjectDescription[0]}</a></li>
-          <li class="lsNone"><img src="images/Circle.png" alt=""></li>
           <li class="lsNone"><a class="tdnone" href="">${projects[project].desktopProjectDescription[1]}</a></li>
-          <li class="lsNone"><img src="images/Circle.png" alt=""></li>
           <li class="lsNone"><a class="tdnone" href="">${projects[project].desktopProjectDescription[2]}</a></li>
+          <li class="lsNone"><a class="tdnone" href="">${projects[project].desktopProjectDescription[3]}</a></li>
+          <li class="lsNone"><a class="tdnone" href="">${projects[project].desktopProjectDescription[4]}</a></li>
   </ul>
   </div>
   <div class="project_image">
@@ -297,7 +297,8 @@ const poupConstructor = (project) => {
   </div>
   <div class="project_detail_container pdt-50">
       <div class="project_detail mobilePopup_show"> ${projects[project].mobileProjectDetail}</div>
-      <div class="project_detail desktopPopup_show"> ${projects[project].desktopProjectDetail}</div>
+      <div class="project_detail flex_column desktopPopup_show">
+      ${projects[project].desktopProjectDetail}</div>
 
       <div class="project_tech_container">
           <div class="project_tech">
@@ -310,9 +311,11 @@ const poupConstructor = (project) => {
                   <li class="lsNone"><a class="tdnone color396d" href="">${projects[project].desktopTech[0]}</a></li>
                   <li class="lsNone"><a class="tdnone color396d" href="">${projects[project].desktopTech[1]}</a></li>
                   <li class="lsNone"><a class="tdnone color396d" href="">${projects[project].desktopTech[2]}</a></li>
-                  <li class="tech_hide lsNone"><a class="tdnone color396d" href="">${projects[project].desktopTech[3]}</a></li>
+                  <li class="lsNone"><a class="tdnone color396d" href="">${projects[project].desktopTech[3]}</a></li>
+                  <li class="tech_hide lsNone"><a class="tdnone color396d" href="">${projects[project].desktopTech[4]}</a></li>
           </ul>
           </div>
+          <div class="popup_seperator desktop_show"> </div>
           <div class="see_live_source_btn">
           <a class="tdnone color396d" href="">
               <button class="see_live dflx detail_popup_btn">
