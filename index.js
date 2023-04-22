@@ -348,3 +348,48 @@ projectSection.forEach((element) => {
     detailPopupBlur();
   });
 });
+
+// This section is for validating client-side-form-validation
+const form = document.querySelector('form');
+const email = document.querySelector('#email');
+const error = document.querySelector('.error');
+const emailRegExp = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+window.addEventListener('load', () => {
+  const isValid = email.value.length === 0 || emailRegExp.test(email.value);
+  email.className = isValid ? 'lvalid' : 'invalid';
+});
+
+email.addEventListener('input', () => {
+  if (email.value.length === 0) {
+    email.className = 'invalid';
+    error.textContent = 'Email field can not be blank';
+    error.className = 'error active';
+  } else if (!emailRegExp.test(email.value)) {
+    email.className = 'invalid';
+    error.textContent = 'Invalid email (email must be in lower case)';
+    error.className = 'error active';
+  } else {
+    email.className = 'valid';
+    error.textContent = '';
+    error.className = 'error dnonenim';
+  }
+});
+
+form.addEventListener('submit', (event) => {
+  if (email.value.length === 0) {
+    event.preventDefault();
+    email.className = 'invalid';
+    error.textContent = 'Email field can not be blank';
+    error.className = 'error active';
+  } else if (!emailRegExp.test(email.value)) {
+    event.preventDefault();
+    email.className = 'invalid';
+    error.textContent = 'Invalid email (email must be in lower case)';
+    error.className = 'error active';
+  } else {
+    email.className = 'valid';
+    error.textContent = '';
+    error.className = 'error dnonenim';
+  }
+});
