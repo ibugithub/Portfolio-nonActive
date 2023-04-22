@@ -393,3 +393,24 @@ form.addEventListener('submit', (event) => {
     error.className = 'error dnonenim';
   }
 });
+
+document.querySelectorAll('.formli').forEach((value) => {
+  value.addEventListener('input', () => {
+    let user = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      msg: document.getElementById('msg').value,
+    };
+    user = JSON.stringify(user);
+    localStorage.setItem('user', user);
+  });
+});
+
+// This section is for preserving data in the web browser...
+window.addEventListener('load', () => {
+  const userValue = localStorage.getItem('user');
+  const userObject = JSON.parse(userValue);
+  document.getElementById('name').value = userObject.name;
+  document.getElementById('email').value = userObject.email;
+  document.getElementById('msg').value = userObject.msg;
+});
